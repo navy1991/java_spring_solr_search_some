@@ -1,0 +1,49 @@
+services:
+  # https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html
+  solr1:
+    image: solr:9.8.1
+    container_name: solr1
+    networks: [solr]
+    ports:
+      - "8983:8983"
+    environment:
+      ZK_HOST: "zoo:2181"
+    depends_on: [zoo]
+    command:
+      - solr-foreground
+      - -cloud
+      - -z
+      - zoo:2181
+      - -p
+      - "8983"
+  solr2:
+    image: solr:9.8.1
+    container_name: solr2
+    networks: [solr]
+    ports:
+      - "8984:8983"
+    environment:
+      ZK_HOST: "zoo:2181"
+    depends_on: [zoo]
+    command:
+      - solr-foreground
+      - -cloud
+      - -z
+      - zoo:2181
+      - -p
+      - "8983"
+
+  zoo:
+    image: zookeeper:3.9
+    container_name: zoo
+    networks: [solr]
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_4LW_COMMANDS_WHITELIST: "mntr,conf,ruok"
+      ZOO_MY_ID: 1
+      
+
+networks:
+  solr:
+    driver: bridge
