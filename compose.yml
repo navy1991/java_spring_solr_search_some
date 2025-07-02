@@ -32,7 +32,6 @@ services:
       - zoo:2181
       - -p
       - "8983"
-
   zoo:
     image: zookeeper:3.9
     container_name: zoo
@@ -42,7 +41,6 @@ services:
     environment:
       ZOO_4LW_COMMANDS_WHITELIST: "mntr,conf,ruok"
       ZOO_MY_ID: 1
-      
 
 networks:
   solr:
