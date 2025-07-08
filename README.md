@@ -34,6 +34,10 @@ open each `Solr Admin UI`
 - CheckStyle
   - https://checkstyle.sourceforge.io/index.html
   - https://github.com/nablarch-development-standards/nablarch-style-guide/blob/master/java/staticanalysis/checkstyle/docs/Checkstyle-commentary.md
+- SpotBugs
+  - https://spotbugs.github.io/
+  - https://spotbugs.readthedocs.io/ja/latest/
+  - https://github.com/spotbugs/spotbugs-gradle-plugin
 - Sentry
   - https://sentry.io/welcome/
   - https://docs.sentry.io/platforms/java/guides/spring-boot/
