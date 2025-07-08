@@ -7,8 +7,8 @@ Sample implementation of Java + Spring Boot + Apache Solr for study.
 - Sprint Boot
 - PostgreSQL
 - Solr Cloud (Cluster)
-    - solr1
-    - solr2
+  - solr1
+  - solr2
 - ZooKeeper
 
 # Get Started
@@ -29,8 +29,8 @@ open each `Solr Admin UI`
 # References
 
 - Solr
-    - https://solr.apache.org/guide/solr/latest/index.html
-    - https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html
+  - https://solr.apache.org/guide/solr/latest/index.html
+  - https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html
 - CheckStyle
   - https://checkstyle.sourceforge.io/index.html
   - https://github.com/nablarch-development-standards/nablarch-style-guide/blob/master/java/staticanalysis/checkstyle/docs/Checkstyle-commentary.md
