@@ -21,7 +21,7 @@ docker compose up
 docker exec solr1 bin/solr create_collection -c gettingstarted -shards 2 -replicationFactor 1 --solr-url http://localhost:8983/solr -z zoo:2181
 ```
 
-open each admin ui
+open each `Solr Admin UI`
 
 - http://localhost:8983/solr/#/
 - http://localhost:8984/solr/#/
@@ -31,3 +31,9 @@ open each admin ui
 - Solr
     - https://solr.apache.org/guide/solr/latest/index.html
     - https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html
+- CheckStyle
+  - https://checkstyle.sourceforge.io/index.html
+  - https://github.com/nablarch-development-standards/nablarch-style-guide/blob/master/java/staticanalysis/checkstyle/docs/Checkstyle-commentary.md
+- Sentry
+  - https://sentry.io/welcome/
+  - https://docs.sentry.io/platforms/java/guides/spring-boot/
